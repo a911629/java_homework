@@ -3,12 +3,12 @@ package com.train.java;
 import java.util.Scanner;
 
 public class Ticket {
-    public void count() {
+    public void count(int rounds) {
         Scanner scanner = new Scanner(System.in);
         int tickets, round_ticket;
-        System.out.print("Please enter number of tickets: ");
+        System.out.print("NO." + rounds + " Please enter number of tickets: ");
         tickets = scanner.nextInt();
-        System.out.print("How many round-trip tickets: ");
+        System.out.print("NO." + rounds + " How many round-trip tickets: ");
         round_ticket = scanner.nextInt();
         System.out.println("Total tickets:" + tickets);
         System.out.println("Round-trip: " + round_ticket);
